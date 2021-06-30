@@ -2,14 +2,14 @@
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - before: >
-      echo "Do Before" >> /tmp/StartLog
-      g++ test.cpp -o test >> /tmp/StartLog
+      echo "Do Before" >> /workspace/StartLog
+      g++ test.cpp -o test >> /workspace/StartLog
     init: >
-      echo "Do Init" >> /tmp/StartLog
-      g++ test.cpp -o test >> /tmp/StartLog
+      echo "Do Init" >> /workspace/StartLog
+      g++ test.cpp -o test >> /workspace/StartLog
     command: >
-      echo "Do Command" >> /tmp/StartLog
-      g++ test.cpp -o test >> /tmp/StartLog
+      echo "Do Command" >> /workspace/StartLog
+      g++ test.cpp -o test >> /workspace/StartLog
 
 vscode:
   extensions:
