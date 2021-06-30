@@ -1,13 +1,13 @@
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - before: >
+  - before: |
       echo "Do Before" >> /workspace/StartLog
       g++ test.cpp -o test >> /workspace/StartLog
-    init: >
+    init: |
       echo "Do Init" >> /workspace/StartLog
       g++ test.cpp -o test >> /workspace/StartLog
-    command: >
+    command: |
       echo "Do Command" >> /workspace/StartLog
       g++ test.cpp -o test >> /workspace/StartLog
 
