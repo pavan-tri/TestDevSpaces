@@ -1,3 +1,4 @@
+
 image:
   file: .gitpod.Dockerfile
 
@@ -17,3 +18,7 @@ tasks:
     command: >
       echo "Do Command" >> /tmp/StartLog
       g++ test.cpp -o test >> /tmp/StartLog
+
+vscode:
+  extensions:
+    - webfreak.debug
