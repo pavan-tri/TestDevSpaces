@@ -8,5 +8,12 @@ ports:
 
 # List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
 tasks:
-  - init: g++ test.cpp -o test # runs during prebuild
-    command: /workspace/test
+  - before: >
+      echo "Do Before" >> /tmp/StartLog
+      g++ test.cpp -o test >> /tmp/StartLog
+    init: >
+      echo "Do Init" >> /tmp/StartLog
+      g++ test.cpp -o test >> /tmp/StartLog
+    command: >
+      echo "Do Command" >> /tmp/StartLog
+      g++ test.cpp -o test >> /tmp/StartLog
