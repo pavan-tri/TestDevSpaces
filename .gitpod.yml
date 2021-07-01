@@ -19,4 +19,4 @@ vscode:
   extensions:
     - webfreak.debug
     - https://github.com/microsoft/vscode-cpptools/releases/download/1.4.1/cpptools-linux.vsix
-      #    - https://github.com/microsoft/vscode-cpptools/releases/download/1.4.1/cpptools-linux-aarch64.vsix
+    - https://github.com/microsoft/vscode-cpptools/releases/download/1.4.1/cpptools-linux-aarch64.vsix
